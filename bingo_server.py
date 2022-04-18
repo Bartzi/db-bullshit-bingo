@@ -1,5 +1,6 @@
 import io
 import json
+import tempfile
 
 from flask import Flask, send_file
 from PIL import Image
@@ -18,7 +19,6 @@ bingo_items = config["bingo_items"]
 def main():
     rendered_image = create_bingo(bingo_image.copy(), bingo_items)
 
-    saved_image = io.BytesIO()
-    rendered_image.save(saved_image, format="png")
-    saved_image.seek(0)
-    return send_file(saved_image, mimetype="image/png")
+    with tempfile.NamedTemporaryFile() as f:
+        rendered_image.save(f.name, format="png")
+        return send_file(f.name, mimetype="image/png")
