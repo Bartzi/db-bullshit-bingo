@@ -8,7 +8,7 @@ from bingo import create_bingo
 
 app = Flask(__name__)
 
-with open("config.json") as f:
+with open("config.json", "rb") as f:
     config = json.load(f)
 
 bingo_image = Image.open(config["image_path"])
