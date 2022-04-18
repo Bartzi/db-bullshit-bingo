@@ -1,0 +1,21 @@
+{
+    "image_path": "Bullshit-Bingo-DB.png",
+    "bingo_items": [
+        "falscher Zug wird bereitgestellt",
+        "geänderte Wagenreihung",
+        "Zug endet hier",
+        "warten auf verspäteten Zug",
+        "Zug wird umgeleitet",
+        "Signalstörung",
+        "Gleiswechsel",
+        "Verspätung von mehr als 60 Minuten",
+        "Polizeieinsatz",
+        "außerplanmäßiger Halt",
+        "Gegenstand auf den Gleisen",
+        "Toiletten defekt",
+        "Anschlusszug wartet nicht",
+        "Zug fällt aus",
+        "Notarzteinsatz",
+        "Personenschaden"
+    ]
+}
